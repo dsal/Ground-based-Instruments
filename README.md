@@ -8,7 +8,10 @@ The application of hyperspectral imaging has been widened in industry such as ag
 | Hyspex | Baldur V-1024 N | 1024 | 400-800/485-960/400-1000 | 72/88/106 | 5.5 |
 | Hyspex | Mjolnir V-1240 | 1240 | 400–1000 | 200 | - |
 |Hyspex | Mjolnir VS-620 & 1240 (V-1240) | 400–1000 (V-1240) | 200 (V-1240) | - |
-|Hyspex | VNIR-1800 | 1800 | 400–1000 | 186 | 	3.26 |
-| Specim | Specim FX10 | - | 400-1000 | - | - |
-|Specim | Specim FX10c | - | 400-770 | - | - |
+| Hyspex | VNIR-1800 | 1800 | 400–1000 | 186 | 	3.26 |
+| BaySpec | OCI-1000 | 2048 | 600-1000 | 100 | < 5 |
+| BaySpec | OCI-2000 | 400x200 | 600-1000 | 20-25 | 12-15 |
+| BaySpec | OCI-FL | 800 | 400-1000 | 60 | 10-12 |
+| BaySpec | OCI-F | 800 | 400-1000 | 120 | 5-7 |
+| BaySpec | OCI-F-HR | 800 | 400-1000 | 240 | 7 |
 | Specim | Specim-IQ | 512x512 | 400-1000 | 204 | 2.9 |
