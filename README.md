@@ -1,8 +1,9 @@
 # Hyperspectral imaging (HSI)
 Hyperspectral imaging (HSI) sensors are promising tools to monitor the energy budget and to control the heat and mass balance of the Arctic sea ice cover, as the surface reflectance of the sea ice is measured by HSI sensors. HSI sensors operate within a wavelength range and, depending on this range, reflectance is converted to broadband reflectance by retrieval algorithms. pectral resolution is an important characteristic of HSI, as the surface reflectance strongly depends on the wavelength. Also. incident and reflection angle controls the broadband reflectance of sea ice. Instrument characteristics and varying insolation caused by atmospheric particles and sky situations are two factors thatimpact HSI. In the NIR domain, the grain size of snow and ice plays a major role in the broadband reflectance and the BRDF of snow and sea ice is stronger in SWIR than in NIR.
 
-The application of hyperspectral imaging has been widened in industry such as agriculture recently, and a variety of hyperspectral imaging sensors have been developed. Hyspex is a Norwegian brand for airborne and ground-based hyperspectral imaging. The spectral domain of Hyspex's cameras varies between 400-2500nm. Also, Specim is a Finnish company which offers a broadest range of hyperspectral cameras covering wavelengths in visible and NIR regions of electromagnetic spectrum. The specifications of some of Hyspex, BaySpec and Specim products are listed in the following table.
+The application of hyperspectral imaging has been widened in industry such as agriculture recently, and a variety of hyperspectral imaging sensors have been developed. Hyspex is a Norwegian brand for airborne and ground-based hyperspectral imaging. The spectral domain of Hyspex's cameras varies between 400-2500nm. Also, Specim is a Finnish company which offers a broadest range of hyperspectral cameras covering wavelengths in visible and NIR regions of electromagnetic spectrum. The specifications of some of hyperspectral products are listed in the following tables.
 
+# HSI products operating in visible and NIR:
 | Brand | Product | Spatial Pixels | Spectral Range (nm) | Number of Channels | Spectral Resolution (nm) |
 |----------------|-----|----------------|----------------|-----|-------------|
 | Hyspex | Baldur V-1024 N | 1024 | 400-800/485-960/400-1000 | 72/88/106 | 5.5 |
@@ -17,6 +18,28 @@ The application of hyperspectral imaging has been widened in industry such as ag
 | Inno-Spec | GreenEye | - | 400-1000 | 80 | <7 |
 | Inno-Spec | BlueEye | - | 220-380 | 80 | 2 |
 | Specim | Specim-IQ | 512x512 | 400-1000 | 204 | 2.9 |
+
+# HSI products operating in NIR and SWIR:
+| Brand | Product | Spatial Pixels | Spectral Range (nm) | Number of Channels | Spectral Resolution (nm) |
+|----------------|-----|----------------|----------------|-----|-------------|
+| Hyspex | Baldur S-640i N | 640 | 960-1675 | 208 | 3.36 |
+| Hyspex | Baldur S-384 N | 384 | 960-2500 | 288 & 5.45 |
+| Hyspex | Mjolnir S-620 | 620 | 970–2500 | 300 | - |
+| Hyspex | Mjolnir VS-620 | 620 (S-620) | 970–2500 (S-620) | 300 (S-620) | - |
+| Hyspex | SWIR-384 | 384 | 930-2500 | 288 | 5.45 |
+| Hyspex | SWIR-640 | 640 | 960-2500 | 360 | 4.38 |
+| EVK | Helios EC32 | 320 | 930-1700 | 248 | - |
+| EVK | Helios EQ32 | 320 | 930-1700 | 248 | - |
+| BaySpec | OCI-F-SWIR | 250 | 900-1700 | 80 | 10 |
+| Surface Optics | 710-SWIR | 512 | 900-1700 | 288 | 2.78 |
+| Inno-Spec | RedEye 1.7 | - | 950-1700 | 80 | 9 |
+| Inno-Spec | RedEye 1.7 High Res | - | 950-1700 | 80 | 9 |
+| Inno-Spec | RedEye 1.9 | - | 1100-1900 | 80 | 11 |
+| Inno-Spec | RedEye 2.2 | - | 1200-2200 | 80 | 13 |
+| Inno-Spec | RedEye 1.7 OEM | - | 950-1700 | 80 | 9 |
+| Inno-Spec | BlackEye | - | 2900-4200 | 200 | 18 |
+| Specim | Specim FX50 | - | 2700-5300 | 200 | - |
+| Specim | Specim FX120 | - | 7700-12300 | 160 | 18 |
 
 A digital color photograph is a combination of three colors, red, green, and blue, while a spectral image consists of dozens of channels. The portable and standalone hyperspectral camera, Specim-IQ, operates within the wavelength range between 400 and 1000 nm, including visible wavelength (400-700 nm) and NIR wavelength (700-1000 nm). The spatial resolution of the camera is 512×512 pixels (px), and the 204 channel bands make a high spectral resolution needed to analyze the surface reflectance of the sea ice.
 
