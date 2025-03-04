@@ -3,7 +3,7 @@ Hyperspectral imaging (HSI) sensors are promising tools to monitor the energy bu
 
 The application of hyperspectral imaging has been widened in industry such as agriculture recently, and a variety of hyperspectral imaging sensors have been developed. Hyspex is a Norwegian brand for airborne and ground-based hyperspectral imaging. The spectral domain of Hyspex's cameras varies between 400-2500nm. Also, Specim is a Finnish company which offers a broadest range of hyperspectral cameras covering wavelengths from visible to thermal IR range. The specifications of Hyspex and Specim products as well as some companies are listed in the following table.
 
-| Brand | Product | Spatial Pixels | Spectral Range (nm) | Spectral Resolution (nm) | Channels |
+| Brand | Product | Spatial Pixels | Spectral Range (nm) | Channels | Spectral Resolution (nm) |
 |----------------|-----|----------------|----------------|-----|-----|
 | Hyspex | Baldur V-1024 N | 1024 | 400-800/485-960/400-1000 | 72/88/106 | 5.5 |
 | Hyspex | Mjolnir V-1240 | 1240 | 400–1000 | 200 | - |
