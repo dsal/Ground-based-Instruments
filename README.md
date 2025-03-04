@@ -14,6 +14,8 @@ The application of hyperspectral imaging has been widened in industry such as ag
 | BaySpec | OCI-FL | 800 | 400-1000 | 60 | 10-12 |
 | BaySpec | OCI-F | 800 | 400-1000 | 120 | 5-7 |
 | BaySpec | OCI-F-HR | 800 | 400-1000 | 240 | 7 |
+| Inno-Spec | GreenEye | - | 400-1000 | 80 | <7 |
+| Inno-Spec | BlueEye | - | 220-380 | 80 | 2 |
 | Specim | Specim-IQ | 512x512 | 400-1000 | 204 | 2.9 |
 
 A digital color photograph is a combination of three colors, red, green, and blue, while a spectral image consists of dozens of channels. The portable and standalone hyperspectral camera, Specim-IQ, operates within the wavelength range between 400 and 1000 nm, including visible wavelength (400-700 nm) and NIR wavelength (700-1000 nm). The spatial resolution of the camera is 512×512 pixels (px), and the 204 channel bands make a high spectral resolution needed to analyze the surface reflectance of the sea ice.
