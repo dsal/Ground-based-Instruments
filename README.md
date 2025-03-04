@@ -17,7 +17,9 @@ The application of hyperspectral imaging has been widened in industry such as ag
 | Inno-Spec | GreenEye | - | 400-1000 | 80 | <7 |
 | Inno-Spec | BlueEye | - | 220-380 | 80 | 2 |
 | Specim | Specim-IQ | 512x512 | 400-1000 | 204 | 2.9 |
+
 Table 1: HSI products operating in visible and NIR
+
 
 | Brand | Product | Spatial Pixels | Spectral Range (nm) | Number of Channels | Spectral Resolution (nm) |
 |----------------|-----|----------------|----------------|-----|-------------|
@@ -39,6 +41,7 @@ Table 1: HSI products operating in visible and NIR
 | Inno-Spec | BlackEye | - | 2900-4200 | 200 | 18 |
 | Specim | Specim FX50 | - | 2700-5300 | 200 | - |
 | Specim | Specim FX120 | - | 7700-12300 | 160 | 18 |
+
 Table 2: HSI products operating in NIR and SWIR
 
 A digital color photograph is a combination of three colors, red, green, and blue, while a spectral image consists of dozens of channels. The portable and standalone hyperspectral camera, Specim-IQ, operates within the wavelength range between 400 and 1000 nm, including visible wavelength (400-700 nm) and NIR wavelength (700-1000 nm). The spatial resolution of the camera is 512×512 pixels (px), and the 204 channel bands make a high spectral resolution needed to analyze the surface reflectance of the sea ice.
