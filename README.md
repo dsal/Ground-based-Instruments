@@ -50,4 +50,13 @@ The camera was designed based on push-broom technology, that is known as line sc
 
 Basic data handling and data analysis processes, such as preprocessing and classification routines, are implemented within the camera software Specim IQ Studio and the Python programming language is used as a convenient interface for statistical and analytic purposes and for visualizing the data sets.
 
+![25_hsi_basics_spectrum](https://github.com/user-attachments/assets/84b06598-0f4e-415f-9f0d-81e0b3da146b)
+Figure 1: The number of channel bands covering wavelengths from 400 to 1000 nm.
+
+![25_hsi_basics_vector_visualization](https://github.com/user-attachments/assets/408b353f-36ec-464a-ab85-aec798682309)
+Figure 2: Vector visualization of Specim-IQ.
+
 Capturing spatial and spectral parts of the Specim-IQ undergoes a slight temporal delay, causing distortions, if an object moves in the image. Also, vibrations create distortions during capturing the images. These vibrations impact the spatial image, while spectral signals are safe. Duration of measurement can be reduced, if fewer channel bands are chosen.
+
+# White Reference Detection
+A white reference panel mounted on a tripod is placed horizontally during the hyperspectral imaging procedure, which is a Lambertian surface and uniformly reflects the sunlight in all directions. The panel is required to obtain relative reflectance in the image records. It is an approximation of a Lambertian reflector which is a surface property to scatter incident light in all directions. A rough surface scatters large parts of the incident light, which is the definition of diffuse reflection, and the remaining fraction is refracted and transmits in the medium according to Snell's law. A rough surface is an optically inhomogeneous medium in which diffuse reflection occurs. Figure \ref{fig:figures/28.png} shows the white reference panel used in HSI measurements during the MOSAiC campaign. The panel was installed on a stand to reflect the incident radiation to the hyperspectral camera in the MOSAiC expedition. Also, the image \ref{fig:figures/13.jpg} illustrates the difference between the scattering of light by inhomogeneous and homogeneous mediums \cite{lu2017light} that illustrates the quality of the white reflectance panel and its ability to diffuse reflections by the white reflectance panel. The ability of the inhomogeneous surface to diffuse incident light is higher than that of the homogeneous surface, as the former is of a bumpy shape which reflects incident light with different angles, thus diffusing incident light.\\
