@@ -3,10 +3,7 @@ by Ahmad Salehi
 
 Hyperspectral imaging (HSI) sensors are powerful tools for environmental monitoring, resource management, and climate studies, where understanding surface reflectance and its interactions with energy is critical. HSI sensors operate within a wavelength range and, depending on this range, reflectance is converted to broadband reflectance by retrieval algorithms. Spectral resolution is an important characteristic of HSI, as the surface reflectance strongly depends on the wavelength. Also. incident and reflection angle controls the broadband reflectance of sea ice. Instrument characteristics and varying insolation caused by atmospheric particles and sky situations are two factors thatimpact HSI. In the NIR domain, the grain size of snow and ice plays a major role in the broadband reflectance and the BRDF of snow and sea ice is stronger in SWIR than in NIR.
 
-<video width="600" controls>
-  <source src="https://raw.githubusercontent.com/dsal/HSI-in-Polar-Regions/main/HSI_1.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[Watch the video on YouTube](https://www.youtube.com/watch?v=VcIOZ_RLmOw)
 
 
 The application of hyperspectral imaging has been widened in industry such as agriculture recently, and a variety of hyperspectral imaging sensors have been developed. Hyspex is a Norwegian brand for airborne and ground-based hyperspectral imaging. The spectral domain of Hyspex's cameras varies between 400-2500nm. Also, Specim is a Finnish company which offers a broadest range of hyperspectral cameras covering wavelengths in visible and NIR regions of electromagnetic spectrum. The specifications of some of hyperspectral products are listed in the following tables.
