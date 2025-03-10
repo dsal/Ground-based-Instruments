@@ -103,4 +103,5 @@ plotting spectrum of selected points
 
 you can install this library in our current environment using pip, e.g.
 
+```bash
 python -m pip install git+ssh://git@gitlab.seaice.physik.uni-bremen.de/polarrs/hscam.git
