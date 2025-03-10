@@ -5,7 +5,7 @@ Hyperspectral imaging (HSI) sensors are powerful tools for environmental monitor
 
 <div align="center">
   <video width="600" controls>
-    <source src="https://raw.githubusercontent.com/dsal/yourrepo/main/HSI_1.mp4" type="video/mp4">
+    <source src="https://raw.githubusercontent.com/dsal/HSI-in-Polar-Regions/main/HSI_1.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
