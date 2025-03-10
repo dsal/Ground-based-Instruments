@@ -1,4 +1,4 @@
-# Hyperspectral imaging (HSI)
+# Hyperspectral imaging (HSI) in Polar Regions
 by Ahmad Salehi
 
 Hyperspectral imaging (HSI) sensors are powerful tools for environmental monitoring, resource management, and climate studies, where understanding surface reflectance and its interactions with energy is critical. HSI sensors operate within a wavelength range and, depending on this range, reflectance is converted to broadband reflectance by retrieval algorithms. Spectral resolution is an important characteristic of HSI, as the surface reflectance strongly depends on the wavelength. Also. incident and reflection angle controls the broadband reflectance of sea ice. Instrument characteristics and varying insolation caused by atmospheric particles and sky situations are two factors thatimpact HSI. In the NIR domain, the grain size of snow and ice plays a major role in the broadband reflectance and the BRDF of snow and sea ice is stronger in SWIR than in NIR.
