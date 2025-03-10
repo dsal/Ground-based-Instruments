@@ -96,4 +96,5 @@ A white reference panel mounted on a tripod is placed horizontally during the hy
 
 ![Lambertian surface_enhanced](https://github.com/user-attachments/assets/fe6cad71-55f3-4518-a31b-30116e27b7fd)
 Figure 8: a and b show specular and diffuse reflection at a rough surface of an optically homogeneous and inhomogeneous medium respectively.
-White reference detection is a crucial preprocessing step. As hundreds of HSI images captured in MOSAiC and ATWAICE expeditions are analyzed, manual selection of a white reference requires tens of hours. In order to automatically detect it, an unsupervised method has been developed. This method can be used in HSI data sets in which the pixels with the highest relative reflectance belong to the white reference. In other words, if some pixels outside the white reference are the brightest pixels in reflectivity, this method is useless.
+
+White reference detection is a crucial preprocessing step. As hundreds of HSI images are analyzed, manual selection of a white reference requires tens of hours. In order to automatically detect it, an unsupervised method has been developed. This method can be used in HSI data sets in which the pixels with the highest relative reflectance belong to the white reference. In other words, if some pixels outside the white reference are the brightest pixels in reflectivity, this method is useless.
