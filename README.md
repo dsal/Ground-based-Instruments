@@ -92,16 +92,3 @@ In addition to the fluctuations in the range 900-1000nm, there is an anomaly in 
 
 ![25_hsi_basics_low_snr](https://github.com/user-attachments/assets/e3a0fbbd-208a-4afe-85e9-53b2be3c8420)
 Figure 7: These two figures show existence of low SNR beyond 850nm that contributes to fluctuations.
-# Hscam
-repository for tools for processing of hyperspectral camera data from the SPECIM IQ
-At the moment it implements the class HSCam for handling the Specim IQ camera data.
-It includes tools functionality for
-
-calibration
-RGB plotting
-plotting spectrum of selected points
-
-you can install this library in our current environment using pip, e.g.
-
-```bash
-python -m pip install git+ssh://git@gitlab.seaice.physik.uni-bremen.de/polarrs/hscam.git
