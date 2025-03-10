@@ -26,7 +26,7 @@ Algorithm Description:
 An unsupervised algorithm has been designed to detect the pixel coordinates
 of a white reference panel that serves as a Lambertian surface. The algorithm
 operates under the assumption that the white reference panel exhibits the highest
-reflectance within the field of view  under given illumination conditions.
+reflectance within the field of view under given illumination conditions.
 
 The white reference panel has to be the most reflective surface and the illumination
 conditions are such that the panel's reflectance is maximized.
