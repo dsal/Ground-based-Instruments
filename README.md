@@ -75,21 +75,28 @@ Figure 4: a and b show specular and diffuse reflection at a rough surface of an 
 
 White reference detection is a crucial preprocessing step. As hundreds of HSI images are analyzed, manual selection of a white reference requires tens of hours. In order to automatically detect it, an unsupervised method has been developed. This method can be used in HSI data sets in which the pixels with the highest relative reflectance belong to the white reference. In other words, if some pixels outside the white reference are the brightest pixels in reflectivity, this method is useless.
 
+An unsupervised algorithm was designed to detect the pixel coordinates of a white reference panel that serves as a Lambertian surface. The algorithm operates under the assumption that the white reference panel exhibits the highest reflectance within the field of view under given illumination and atmospheric conditions. The white reference panel has to be the most reflective surface, and the illumination conditions are such that the panel's reflectance is maximized. If some pixels outside the white reference panel reflects irradiance more strongly than the white reference panel, the algorithm may erroneously identify this bright surface as the white reference coordinates. This scenario can lead to incorrect detection, especially in environments with highly reflective objects or surfaces such as overcast sky.
+
+The algorithm scans the image to identify areas with the highest reflectance values. Then, based on the intensity of the reflectance, the algorithm determines the most likely location of the white reference panel.
+
+![wr and rgb](https://github.com/user-attachments/assets/8cf2913d-6642-4e55-8da1-8529ae257226)
+Figure 5: The right image is RGB and the left image is the output image of the white reference detection algorithm. The middle location of the red cluster is chosen as the white reference.
+
 # Noise
 Noise in hyperspectral imaging sensor includes thermal (Johnson) noise, quantization noise and shot (photon) noise each contributing to the corruption of spectral bands to varying degrees. These corrupted bands are often excluded from datasets to enhance the accuracy of subsequent analysis. Thermal motion of electrons inside conductors of the camera's electric sub-systems produces Johnson-Nyquist (or thermal) noise. Shot noise arises from the discrete nature of electric DC current and is related to the arrival of charge carriers at a specific place. Quantization noise is the distortion that occurs when an analog signal is converted into a digital signal with a limited number of discrete amplitudes. Quantization noise is the distortion introduced during the conversion of an analog signal to a digital signal with a limited number of discrete amplitudes. Shot noise in electronic devices originates from the quantized nature of electric charge and is a consequence of the random arrival of discrete charge carriers, such as electrons or holes, at a specific location. This stochastic process introduces fluctuations in the current, even under steady-state conditions, and is particularly significant in low-current or high-frequency applications.
 
 Fixed Pattern Noise (FPN) is the spatial variation in pixel output values under uniform illumination. Pixel FPN is mainly due to the variation in the photodetector parameters and dark current. The following figure shows the impacts of FPN and its removal. The left image appears heavily distorted, making it difficult to see details in image. In contrast, the right image shows the same scene after the FPN has been removed. The background appears more uniform, with improved contrast and clarity. This correction improves image quality, making it easier to interpret and analyze thermal data.
 
 ![25_hsi_basics_fpn](https://github.com/user-attachments/assets/1f7cc454-e03a-4ba6-bfb5-de57578e489a)
-Figure 5: An IR image with fixed pattern noise (left) and after the fixed pattern noise is removed (right).
+Figure 6: An IR image with fixed pattern noise (left) and after the fixed pattern noise is removed (right).
 
 ![25_hsi_basics_noise_spectrum](https://github.com/user-attachments/assets/646d45ba-1ad0-47f8-837e-6b2c7dd44d6e)
-Figure 6: These two figures show existence of low SNR beyond 850nm that contributes to fluctuations.
+Figure 7: These two figures show existence of low SNR beyond 850nm that contributes to fluctuations.
 
 In addition to the fluctuations in the range 900-1000nm, there is an anomaly in most of the HSI images that is a substantial decrease in upper and lower pixels at longer wavelengths. The reason for this anomaly is still unknown; however, this darkening significantly impacts data processing such as the classification of sea ice surface properties and should be eliminated for further data analysis. The figure 7 shows the mentioned anomaly that corrupts pixels in NIR regions,, and the figure 6 demonstrates a data set without the corruption thathas onlyimpact of SNR (FPN).
 
 ![25_hsi_basics_low_snr](https://github.com/user-attachments/assets/e3a0fbbd-208a-4afe-85e9-53b2be3c8420)
-Figure 7: These two figures show existence of low SNR beyond 850nm that contributes to fluctuations.
+Figure 8: These two figures show existence of low SNR beyond 850nm that contributes to fluctuations.
 
 ## Download HSI Files
 The dataset is derived from an experimental investigation employing spatially resolved hyperspectral imaging techniques to analyze Arctic sea ice. This dataset, accessible via the DOI link (https://doi.pangaea.de/10.1594/PANGAEA.939448), is hosted on PANGAEA, an open-access repository for earth and environmental science data.
