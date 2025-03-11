@@ -6,6 +6,20 @@ Hyperspectral imaging (HSI) sensors are powerful tools for environmental monitor
 https://github.com/user-attachments/assets/3a5ad51b-7f1d-4622-80c2-0aa45a46347a
 
 
+A digital color photograph is a combination of three colors, red, green, and blue, while a spectral image consists of dozens of channels. The portable and standalone hyperspectral camera, Specim-IQ, operates within the wavelength range between 400 and 1000 nm, including visible wavelength (400-700 nm) and NIR wavelength (700-1000 nm). The spatial resolution of the camera is 512×512 pixels (px), and the 204 channel bands make a high spectral resolution needed to analyze the surface reflectance of the sea ice.
+
+The camera was designed based on push-broom technology, that is known as line scan hyperspectral camera. In this technology, spectral and spatial data of the sea ice surface are collected line by line, while whisk broom scanners capture the spectral information of a point on the measured object. In other words, the camera captures 512 lines of images and a square image (512×512 px) is obtained. The push broom instrument is more compact and lightweight compared to earlier whisk broom instruments. However, its calibration process is significantly more complex due to the increased number of detectors involved. In addition, snapshot hyperspectral imaging is a technique that captures hyperspectral images within a single integration period of a detector array, eliminating the need for scanning. Unlike pushbroom and whisk broom methods, this approach does not involve moving parts, minimizing the risk of motion-induced artifacts. Frame or snapshot imagers feature a more complex focal plane and exhibit slower read-out times, resulting in reduced imaging capacity compared to pushbroom scanners. However, they demonstrate a higher tolerance for significant rate knowledge errors and rate noise during image acquisition, while preserving overall image quality. During the MOSAiC campaign in July 2020, the camera recorded 651 data records in different sky and illumination conditions.
+
+Basic data handling and data analysis processes, such as preprocessing and classification routines, are implemented within the camera software Specim IQ Studio and the Python programming language is used as a convenient interface for statistical and analytic purposes and for visualizing the data sets.
+
+![25_hsi_basics_spectrum](https://github.com/user-attachments/assets/84b06598-0f4e-415f-9f0d-81e0b3da146b)
+Figure 1: The number of channel bands covering wavelengths from 400 to 1000 nm.
+
+![25_hsi_basics_vector_visualization](https://github.com/user-attachments/assets/408b353f-36ec-464a-ab85-aec798682309)
+Figure 2: Vector visualization of Specim-IQ.
+
+Capturing spatial and spectral parts of the Specim-IQ undergoes a slight temporal delay, causing distortions, if an object moves in the image. Also, vibrations create distortions during capturing the images. These vibrations impact the spatial image, while spectral signals are safe. Duration of measurement can be reduced, if fewer channel bands are chosen.
+
 The application of hyperspectral imaging has been widened in industry such as agriculture recently, and a variety of hyperspectral imaging sensors have been developed. Hyspex is a Norwegian brand for airborne and ground-based hyperspectral imaging. The spectral domain of Hyspex's cameras varies between 400-2500nm. Also, Specim is a Finnish company which offers a broadest range of hyperspectral cameras covering wavelengths in visible and NIR regions of electromagnetic spectrum. The specifications of some of hyperspectral products are listed in the following tables.
 
 | Brand | Product | Spatial Pixels | Spectral Range (nm) | Number of Channels | Spectral Resolution (nm) |
@@ -48,20 +62,6 @@ Table 1: HSI products operating in visible and NIR
 | Specim | Specim FX120 | - | 7700-12300 | 160 | 18 |
 
 Table 2: HSI products operating in NIR and SWIR
-
-A digital color photograph is a combination of three colors, red, green, and blue, while a spectral image consists of dozens of channels. The portable and standalone hyperspectral camera, Specim-IQ, operates within the wavelength range between 400 and 1000 nm, including visible wavelength (400-700 nm) and NIR wavelength (700-1000 nm). The spatial resolution of the camera is 512×512 pixels (px), and the 204 channel bands make a high spectral resolution needed to analyze the surface reflectance of the sea ice.
-
-The camera was designed based on push-broom technology, that is known as line scan hyperspectral camera. In this technology, spectral and spatial data of the sea ice surface are collected line by line, while whisk broom scanners capture the spectral information of a point on the measured object. In other words, the camera captures 512 lines of images and a square image (512×512 px) is obtained. The push broom instrument is more compact and lightweight compared to earlier whisk broom instruments. However, its calibration process is significantly more complex due to the increased number of detectors involved. In addition, snapshot hyperspectral imaging is a technique that captures hyperspectral images within a single integration period of a detector array, eliminating the need for scanning. Unlike pushbroom and whisk broom methods, this approach does not involve moving parts, minimizing the risk of motion-induced artifacts. Frame or snapshot imagers feature a more complex focal plane and exhibit slower read-out times, resulting in reduced imaging capacity compared to pushbroom scanners. However, they demonstrate a higher tolerance for significant rate knowledge errors and rate noise during image acquisition, while preserving overall image quality. During the MOSAiC campaign in July 2020, the camera recorded 651 data records in different sky and illumination conditions.
-
-Basic data handling and data analysis processes, such as preprocessing and classification routines, are implemented within the camera software Specim IQ Studio and the Python programming language is used as a convenient interface for statistical and analytic purposes and for visualizing the data sets.
-
-![25_hsi_basics_spectrum](https://github.com/user-attachments/assets/84b06598-0f4e-415f-9f0d-81e0b3da146b)
-Figure 1: The number of channel bands covering wavelengths from 400 to 1000 nm.
-
-![25_hsi_basics_vector_visualization](https://github.com/user-attachments/assets/408b353f-36ec-464a-ab85-aec798682309)
-Figure 2: Vector visualization of Specim-IQ.
-
-Capturing spatial and spectral parts of the Specim-IQ undergoes a slight temporal delay, causing distortions, if an object moves in the image. Also, vibrations create distortions during capturing the images. These vibrations impact the spatial image, while spectral signals are safe. Duration of measurement can be reduced, if fewer channel bands are chosen.
 
 # White Reference Detection
 A white reference panel mounted on a tripod is placed horizontally during the hyperspectral imaging procedure, which is a Lambertian surface and uniformly reflects the sunlight in all directions. The panel is required to obtain relative reflectance in the image records. It is an approximation of a Lambertian reflector which is a surface property to scatter incident light in all directions. A rough surface scatters large parts of the incident light, which is the definition of diffuse reflection, and the remaining fraction is refracted and transmits in the medium according to Snell's law*, the refraction of incident light to a medium is controlled by refraction index of the medium. A rough surface is an optically inhomogeneous medium in which diffuse reflection occurs. Figure 3 shows the white reference panel used in a HSI measurement. The panel was installed on a stand to reflect the incident radiation to the hyperspectral camera. Also, the image illustrates the difference between the scattering of light by inhomogeneous and homogeneous mediums that illustrates the quality of the white reflectance panel and its ability to diffuse reflections by the white reflectance panel. The ability of the inhomogeneous surface to diffuse incident light is higher than that of the homogeneous surface, as the former is of a bumpy shape which reflects incident light with different angles, thus diffusing incident light.
