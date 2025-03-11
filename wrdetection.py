@@ -47,10 +47,9 @@ import numpy as np
 import scipy.signal
 import scipy.ndimage
 import matplotlib.pyplot as plt
-from hscam import HSCam  # Ensure HSCam is defined or imported
+from hscam import HSCam
 
 class WRDetection:
-    @staticmethod
     def get_wr_pos(file_path, number_of_cluster_pixels, show_image=False):
         hsc = HSCam(file_path)
         temp850 = hsc.datacube[:,:,130:140].mean(axis=2).copy()
@@ -64,7 +63,7 @@ class WRDetection:
         wr_y = np.sort(y)[len(np.sort(y)) // 2]
 
         if show_image:
-            plt.figure(figsize=(8, 8))
+            plt.figure(figsize=(6, 6))
             plt.imshow(temp850_blurred.T, cmap="gray", vmin=0, vmax=1)
             plt.scatter(x, y, color='red', s=5, label='Cluster Pixels')
             plt.scatter(wr_x, wr_y, color='green', s=20, label='Middle Pixel')
