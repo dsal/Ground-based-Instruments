@@ -92,4 +92,4 @@ In addition to the fluctuations in the range 900-1000nm, there is an anomaly in 
 Figure 7: These two figures show existence of low SNR beyond 850nm that contributes to fluctuations.
 
 ## Download Large HSI Files
-The HSI file is available as part of the (https://github.com/dsal/HSI-in-Polar-Regions/releases/tag/HSI-in-Polar-Regions).
+The HSI file is available on this link: https://github.com/dsal/HSI-in-Polar-Regions/releases/tag/HSI-in-Polar-Regions
