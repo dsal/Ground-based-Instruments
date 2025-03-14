@@ -100,5 +100,6 @@ Figure 8: These two figures show existence of low SNR beyond 850nm that contribu
 
 ## Download HSI Files
 The dataset is derived from an experimental investigation employing spatially resolved hyperspectral imaging techniques to analyze Arctic sea ice. This dataset, accessible via the DOI link (https://doi.pangaea.de/10.1594/PANGAEA.939448), is hosted on PANGAEA, an open-access repository for earth and environmental science data. The following figure navigates you to download the data sets:
+
 ![Steps](https://github.com/user-attachments/assets/f4097ed5-7b58-499f-ac30-d072b32d1a8a)
 
