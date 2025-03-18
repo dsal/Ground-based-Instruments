@@ -6,6 +6,8 @@ Hyperspectral imaging (HSI) sensors are powerful tools for environmental monitor
 The following video shows the surface reflectance of sea ice in a wavelength range 400-900 nm. The differences in images at these wavelengths are attributed to the higher reflectance of snow and sea ice surfaces in the visible region compared to the near-infrared (NIR) region. The bumpy surface is more obvious in the longer wavelengths because of the lower reflectance and reduced anisotropy effects in the NIR region. The white reference panel, designed to have a Lambertian surface with high reflectivity, appears bright in the entire video, serving as a standard reference to ensure accurate reflectance measurements. These observations highlight the importance of considering wavelength-dependent reflectance properties when analyzing hyperspectral data.
 
 https://github.com/user-attachments/assets/38b4dcf5-46df-4671-8ed1-508efdd7e98b
+![hsi at wavelength](https://github.com/user-attachments/assets/bfd58ee9-d85f-4ce8-b8e9-ea322fb6cf2e)
+
 
 A digital color photograph is a combination of three colors, red, green, and blue, while a spectral image consists of dozens of channels. The portable and standalone hyperspectral camera, Specim-IQ, operates within the wavelength range between 400 and 1000 nm, including visible wavelength (400-700 nm) and NIR wavelength (700-1000 nm). The spatial resolution of the camera is 512×512 pixels (px), and the 204 channel bands make a high spectral resolution needed to analyze the surface reflectance of the sea ice.
 
