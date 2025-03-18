@@ -6,6 +6,7 @@ Hyperspectral imaging (HSI) sensors are powerful tools for environmental monitor
 The following video shows the surface reflectance of sea ice in a wavelength range 400-900 nm. The differences in images at these wavelengths are attributed to the higher reflectance of snow and sea ice surfaces in the visible region compared to the near-infrared (NIR) region. The bumpy surface is more obvious in the longer wavelengths because of the lower reflectance and reduced anisotropy effects in the NIR region. The white reference panel, designed to have a Lambertian surface with high reflectivity, appears bright in the entire video, serving as a standard reference to ensure accurate reflectance measurements. These observations highlight the importance of considering wavelength-dependent reflectance properties when analyzing hyperspectral data.
 
 https://github.com/user-attachments/assets/38b4dcf5-46df-4671-8ed1-508efdd7e98b
+.
 ![hsi at wavelength](https://github.com/user-attachments/assets/bfd58ee9-d85f-4ce8-b8e9-ea322fb6cf2e)
 
 
