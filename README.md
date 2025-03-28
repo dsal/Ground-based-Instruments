@@ -131,7 +131,8 @@ categorical and spatial information of labled pixels are derived through a pixel
 2. Definition of Target Colors in the RGBA Spectrum: two specific RGBA color values are predefined to represent different surface types. Pond color with with RGBA code [255, 0, 0, 255] corresponds to red with full opacity (alpha = 255), and sea ice color with RGBA code [255, 0, 255, 255] represents magenta (a combination of red and blue) with full opacity.
 3. Binary Mask Generation for Classification: the np.all(image_array == pond_color, axis=-1) operation evaluates whether each pixel in the image exactly matches the RGBA value assigned to pond (i.e., [255, 0, 0, 255]). This results in a binary mask (binary_pond_array), where True denotes the presence of pond pixels and False denotes other regions. Similarly, np.all(image_array == seaice_color, axis=-1) generates another binary mask (binary_seaice_array) for identifying sea ice pixels in the image.
 
-![13_4_saved_max](https://github.com/user-attachments/assets/89c6d955-f9dc-42ec-9050-8e4703d72d44)
+![13_4_saved_max](https://github.com/user-attachments/assets/cc47cefe-f537-499c-a081-d5cd808e71f8)
+
 Figure 12: An example of a 512x512 encoded image with categorical and spatial information.
 
 This approach enables the extraction of pixel coordinates associated with each class, ensuring accurate localization of sea ice and melt pond regions. The exported layer images are subsequently loaded into Python for further processing, where spectral features of each pixel are derived. These features include the relative reflectance values across 170 hyperspectral channels, spanning wavelengths from 400 nm to 900 nm. This pixel-wise feature extraction forms the basis for training the classification model, allowing for detailed spectral analysis and improved differentiation between sea ice and melt pond surfaces.
