@@ -114,9 +114,14 @@ In this repo., machine learning methods are employed to classify surface types u
 An advantage of using hyperspectral camera data for classification is the ability to leverage the full spectral information available across multiple wavelength channels. Unlike RGB or multispectral imaging, which captures only a limited number of bands, hyperspectral imaging provides a continuous and detailed spectral profile for each pixel. In this study, each spectral channel serves as a distinct feature, enabling a more comprehensive characterization of the surface types. For example, if the dataset contains 170 spectral channels, each channel contributes unique information about the reflectance properties of different surface types, allowing for a more robust and accurate classification. This high-dimensional feature space improves the model’s ability to distinguish subtle spectral differences between ice, snow and melt ponds, improving classification precision. Furthermore, the richness of hyperspectral data reduces the risk of error in classification due to spectral overlap, making it particularly valuable for detailed surface-type discrimination in complex sea ice environments.
 
 For the annotation process, GIMP and Adobe Photoshop are utilized to manually label the sea ice surface types. Each dataset consists of an image with a resolution of 512 × 512 pixels, which is imported into these software tools for annotation. To facilitate precise labeling, two separate layers are created, corresponding to the sea ice class and the melt pond class. Each annotated layer is then exported as an individual 512 × 512 pixels image, preserving the pixel-wise class information.
+
 ![image](https://github.com/user-attachments/assets/a92886ce-0c47-4ec6-a314-a5bfb303de2c)
+Figure 9: Using GIMP software for annotation.
 
-![image](https://github.com/user-attachments/assets/aa6c19c6-dc66-47eb-9370-ffdc98b7c1fc)
+![image](https://github.com/user-attachments/assets/a5e3c3e9-38ef-4ee1-93eb-4c2c5abaf314)
+Figure 10: Using Adobe Photoshop software for annotation.
 
+![image](https://github.com/user-attachments/assets/fde3988f-c5da-45f7-8921-6fe4138e9f51)
+Figure 11: the output of the annotation process is a 512x512 pixel image that contains infomation about label (either red or purple) and coordinate (y,x) of targeted pixels.
 
 This approach enables the extraction of pixel coordinates associated with each class, ensuring accurate localization of sea ice and melt pond regions. The exported layer images are subsequently loaded into Python for further processing, where spectral features of each pixel are derived. These features include the relative reflectance values across 170 hyperspectral channels, spanning wavelengths from 400 nm to 900 nm. This pixel-wise feature extraction forms the basis for training the classification model, allowing for detailed spectral analysis and improved differentiation between sea ice and melt pond surfaces.
