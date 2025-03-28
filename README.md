@@ -122,6 +122,16 @@ Figure 9: Using GIMP software for annotation.
 Figure 10: Using Adobe Photoshop software for annotation.
 
 ![image](https://github.com/user-attachments/assets/fde3988f-c5da-45f7-8921-6fe4138e9f51)
-Figure 11: The annotation process generates a 512×512 pixel image encoding both categorical and spatial information. Specifically, each annotated pixel is assigned a label (either red or purple) and corresponding coordinates (y,x), representing its spatial position within the image.
+Figure 11: The annotation process generates a 512×512 pixel image encoding both categorical and spatial information. Specifically, each annotated pixel is assigned a label (either red or magenta) and corresponding coordinates (y,x), representing its spatial position within the image.
+
+The generated encoded image serves as input for constructing the feature dataframe, which is utilized for training and testing in classification tasks. This feature table is subsequently processed using Scikit-learn functions to facilitate model development and evaluation. By generating tens of these encoded images, we can produce hundreds of thousands of pixels, each serving as a row in the feature dataframe. This extensive dataset enables a more robust representation of the feature space, enhancing the effectiveness of classification models.
+
+categorical and spatial information of labled pixels are derived through a pixel-wise labling process by leveraging the input images' RGBA values to identify specific regions associated with distinct surface types. The process can be described scientifically as follows:
+1. Image Representation as a Numerical Array: the image is first converted into a NumPy array (image_array = np.array(image)). This transformation allows for efficient numerical operations and element-wise comparisons, which are necessary for classification tasks.
+2. Definition of Target Colors in the RGBA Spectrum: two specific RGBA color values are predefined to represent different surface types. Pond color with with RGBA code [255, 0, 0, 255] corresponds to red with full opacity (alpha = 255), and sea ice color with RGBA code [255, 0, 255, 255] represents magenta (a combination of red and blue) with full opacity.
+3. Binary Mask Generation for Classification: the np.all(image_array == pond_color, axis=-1) operation evaluates whether each pixel in the image exactly matches the RGBA value assigned to pond (i.e., [255, 0, 0, 255]). This results in a binary mask (binary_pond_array), where True denotes the presence of pond pixels and False denotes other regions. Similarly, np.all(image_array == seaice_color, axis=-1) generates another binary mask (binary_seaice_array) for identifying sea ice pixels in the image.
+
+![13_4_saved_max](https://github.com/user-attachments/assets/89c6d955-f9dc-42ec-9050-8e4703d72d44)
+Figure 12: An example of a 512x512 encoded image with categorical and spatial information.
 
 This approach enables the extraction of pixel coordinates associated with each class, ensuring accurate localization of sea ice and melt pond regions. The exported layer images are subsequently loaded into Python for further processing, where spectral features of each pixel are derived. These features include the relative reflectance values across 170 hyperspectral channels, spanning wavelengths from 400 nm to 900 nm. This pixel-wise feature extraction forms the basis for training the classification model, allowing for detailed spectral analysis and improved differentiation between sea ice and melt pond surfaces.
