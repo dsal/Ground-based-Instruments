@@ -122,6 +122,6 @@ Figure 9: Using GIMP software for annotation.
 Figure 10: Using Adobe Photoshop software for annotation.
 
 ![image](https://github.com/user-attachments/assets/fde3988f-c5da-45f7-8921-6fe4138e9f51)
-Figure 11: the output of the annotation process is a 512x512 pixel image that contains infomation about label (either red or purple) and coordinate (y,x) of targeted pixels.
+Figure 11: The annotation process generates a 512×512 pixel image encoding both categorical and spatial information. Specifically, each annotated pixel is assigned a label (either red or purple) and corresponding coordinates (y,x), representing its spatial position within the image.
 
 This approach enables the extraction of pixel coordinates associated with each class, ensuring accurate localization of sea ice and melt pond regions. The exported layer images are subsequently loaded into Python for further processing, where spectral features of each pixel are derived. These features include the relative reflectance values across 170 hyperspectral channels, spanning wavelengths from 400 nm to 900 nm. This pixel-wise feature extraction forms the basis for training the classification model, allowing for detailed spectral analysis and improved differentiation between sea ice and melt pond surfaces.
