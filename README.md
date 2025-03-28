@@ -66,6 +66,11 @@ Table 1: HSI products operating in visible and NIR
 
 Table 2: HSI products operating in NIR and SWIR
 
+## Download HSI Files
+The dataset is derived from an experimental investigation employing spatially resolved hyperspectral imaging techniques to analyze Arctic sea ice. This dataset, accessible via the DOI link (https://doi.pangaea.de/10.1594/PANGAEA.939448), is hosted on PANGAEA, an open-access repository for earth and environmental science data. The following figure navigates you to download the data sets:
+
+![Steps](https://github.com/user-attachments/assets/f4097ed5-7b58-499f-ac30-d072b32d1a8a)
+
 # White Reference Detection
 A white reference panel mounted on a tripod is placed horizontally during the hyperspectral imaging procedure, which is a Lambertian surface and uniformly reflects the sunlight in all directions. The panel is required to obtain relative reflectance in the image records. It is an approximation of a Lambertian reflector which is a surface property to scatter incident light in all directions. A rough surface scatters large parts of the incident light, which is the definition of diffuse reflection, and the remaining fraction is refracted and transmits in the medium according to Snell's law*, the refraction of incident light to a medium is controlled by refraction index of the medium. A rough surface is an optically inhomogeneous medium in which diffuse reflection occurs. Figure 3 shows the white reference panel used in a HSI measurement. The panel was installed on a stand to reflect the incident radiation to the hyperspectral camera. Also, the image illustrates the difference between the scattering of light by inhomogeneous and homogeneous mediums that illustrates the quality of the white reflectance panel and its ability to diffuse reflections by the white reflectance panel. The ability of the inhomogeneous surface to diffuse incident light is higher than that of the homogeneous surface, as the former is of a bumpy shape which reflects incident light with different angles, thus diffusing incident light.
 [*According to Snell's law, the refraction of incident light to a medium is controlled by refraction index of the medium]
@@ -100,9 +105,4 @@ In addition to the fluctuations in the range 900-1000nm, there is an anomaly in 
 
 ![25_hsi_basics_low_snr](https://github.com/user-attachments/assets/e3a0fbbd-208a-4afe-85e9-53b2be3c8420)
 Figure 8: These two figures show existence of low SNR beyond 850nm that contributes to fluctuations.
-
-## Download HSI Files
-The dataset is derived from an experimental investigation employing spatially resolved hyperspectral imaging techniques to analyze Arctic sea ice. This dataset, accessible via the DOI link (https://doi.pangaea.de/10.1594/PANGAEA.939448), is hosted on PANGAEA, an open-access repository for earth and environmental science data. The following figure navigates you to download the data sets:
-
-![Steps](https://github.com/user-attachments/assets/f4097ed5-7b58-499f-ac30-d072b32d1a8a)
 
