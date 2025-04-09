@@ -25,12 +25,20 @@ import scipy.signal
 import scipy.ndimage
 import matplotlib.pyplot as plt
 from hscam import HSCam
+from scipy.ndimage import binary_erosion
 
 class WRDetection:
     def get_wr_pos(file_path, number_of_cluster_pixels, show_image=False):
         hsc = HSCam(file_path)
         temp850 = hsc.datacube[:,:,130:140].mean(axis=2).copy()
         temp850_blurred = scipy.signal.convolve2d(temp850, np.ones((10,10))/100, mode="same")
+        img_normalized = (temp850_blurred - np.min(temp850_blurred)) / (np.max(temp850_blurred) - np.min(temp850_blurred))
+        
+        img_bin = np.where(img_normalized > 0.85, 1, 0).astype(np.uint8)
+        img_eroded = binary_erosion(img_bin, structure=np.ones((15, 15))).astype(np.uint8)
+        y_coords, x_coords = np.where(img_eroded == 1)
+        lowest_x = np.min(x_coords)-15
+        lowest_y = np.min(y_coords)-15
 
         flat_indices = np.argpartition(temp850_blurred.flatten(), -number_of_cluster_pixels)[-number_of_cluster_pixels:]
         top_indices = flat_indices[np.argsort(-temp850_blurred.flatten()[flat_indices])]
@@ -47,4 +55,11 @@ class WRDetection:
             plt.legend()
             plt.title("Processed Image")
 
-        return wr_y, wr_x
+            plt.figure(figsize=(6, 6))
+            plt.imshow(img_eroded.T, cmap="gray", vmin=0, vmax=1)
+            plt.plot([lowest_y, img_eroded.T.shape[1] - 1], [lowest_x, lowest_x], color='yellow', linewidth=1)
+            plt.plot([lowest_y, lowest_y], [lowest_x, img_eroded.T.shape[0] - 1], color='yellow', linewidth=1)
+            plt.legend()
+            plt.axis('off')
+
+        return wr_y, wr_x, lowest_y ,lowest_x
